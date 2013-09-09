@@ -66,7 +66,7 @@ while True:
     #  set informations to print
     font = pygame.font.Font(None, 30)
 
-    text_ang = font.render("angle = %d%c" % (ang, 253), 1, (10, 10, 10))
+    text_ang = font.render("angle = %d" % ang, 1, (10, 10, 10))
     text_ang_pos = (0, 540)
 
     text_vm = font.render("vm = %.1f m/s" % vm, 1, (10, 10, 10))
