@@ -2,8 +2,8 @@ import pygame, sys
 from pygame.locals import *
 from math import *
 
-#rotate an image while keeping its center and size
 def rot_center(image, angle):
+    """rotate an image while keeping its center and size"""
     orig_rect = image.get_rect()
     rot_image = pygame.transform.rotate(image, angle)
     rot_rect = orig_rect.copy()
@@ -49,9 +49,6 @@ s = ballPos # space
 v = (0, 0) # velocity
 vm = 100 # initial speed
 launched = False # ball shoted
-
-for c in range(1,257):
-    print("%d %c" % (c, c))
 
 # the main game loop
 while True:
